@@ -34,3 +34,4 @@ std::ostream &operator<<(std::ostream &os, const geometricform &gf){
     os << "id: " << gf.id << " x: " << gf.x << " y: " << gf.y << " colorF: " << gf.colorF << " colorS: " << gf.colorS;
     return os;
 }
+
