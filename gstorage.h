@@ -1,5 +1,7 @@
 /*    Includes    */
 #include <iostream>
+#include "dataSructures/dlist/dlist.h"
+#include "dataTypes/geometricform.h"
 
 #pragma once
 
@@ -9,11 +11,12 @@ class gstorage {
 
     static gstorage *instance;
 
-    /*      ~ARGV~      */
     std::string geoFileName;
     std::string qryFileName;
     std::string inputPath;
     std::string outputPath;
+
+    dlist<geometricform> *geoForms;
 
    public:
     
@@ -28,6 +31,7 @@ class gstorage {
     std::string getQryFileName();
     std::string getInputPath();
     std::string getOutputPath();
+    dlist<geometricform>* getGeoForms();
 
     friend std::ostream& operator<<(std::ostream& os, const gstorage& gs);
 

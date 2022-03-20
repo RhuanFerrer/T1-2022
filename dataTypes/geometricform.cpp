@@ -2,12 +2,13 @@
 #include <iostream>
 #include "geometricform.h"
 
-geometricform::geometricform(int id, double x, double y, std::string colorF, std::string colorS){
+geometricform::geometricform(int id, double x, double y, std::string colorF, std::string colorS, int shape) {
     this->id = id;
     this->x = x;
     this->y = y;
     this->colorF = colorF;
     this->colorS = colorS;
+    this->shape = shape;
 }
 
 void geometricform::setColors(std::string colorF, std::string colorS){

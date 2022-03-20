@@ -4,5 +4,5 @@
 #pragma once
 
 namespace georeader{
-    void read(std::ifstream *geo);
+    void read(std::string geo);
 }

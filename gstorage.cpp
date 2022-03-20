@@ -2,6 +2,9 @@
 
 #include <iostream>
 
+#include "dataSructures\dlist\dlist.h"
+#include "dataTypes/geometricform.h"
+
 gstorage *gstorage::instance = nullptr;
 
 gstorage::gstorage() {}
@@ -51,4 +54,10 @@ std::ostream& operator<<(std::ostream& os, const gstorage& gs){
     os << "inputPath: " << gs.inputPath << std::endl;
     os << "outputPath: " << gs.outputPath << std::endl;
     return os;
+}
+
+dlist<geometricform>* gstorage::getGeoForms() {
+    if(this->geoForms == nullptr)
+        this->geoForms = new dlist<geometricform>();
+    return this->geoForms;
 }
