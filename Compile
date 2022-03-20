@@ -1,0 +1,1 @@
+g++ -std=c++11 -o tes main.cpp gstorage.cpp util.cpp ./input/argv/argvreader.cpp ./input/geo/georeader.cpp ./input/qry/qryreader.cpp ./dataTypes/circle/circle.cpp ./dataTypes/rectangle/rectangle.cpp ./dataTypes/text/text.cpp
