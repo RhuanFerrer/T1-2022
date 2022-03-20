@@ -2,8 +2,6 @@
 
 #pragma once
 
-#define generic template<class T>
-
 class storage {
    private:
     storage();

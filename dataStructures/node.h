@@ -1,4 +1,5 @@
-#include "../../storage.h"
+#include "../gstorage.h"
+#include "../util.h"
 
 #pragma once
 
@@ -14,11 +15,11 @@ class node{
         node<T> *prev(){ return _prev; };
         void next(node<T> *next){ _next = next; };
         void prev(node<T> *prev){ _prev = prev; };
-        // operator <<
         friend std::ostream &operator<<(std::ostream &out, const node<T> &node)
         {
             out << node.data;
             return out;
         };
         T get(){ return data; };
+        void set(T data){ this->data = data; };
 };
