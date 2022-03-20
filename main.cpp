@@ -1,20 +1,22 @@
 #include <iostream>
 
 #include "./dataStructures/dlist/dlist.h"
+#include "./input/argv/argvreader.h"
+#include "./input/geo/georeader.h"
+#include "./input/qry/qryreader.h"
+#include "gstorage.h"
 
-int main(int argc, char* argv[]) {
+int main(int argc, char** argv) {
 
-    dlist<int>* list = new dlist<int>();
+    gstorage *storage = gstorage::getInstance();
 
-    list->insert(3);
-    list->insert(2);
-    list->insert(1);
+    argvreader::read(argc, argv);
 
-    std::cout << *list << std::endl;
+    std::cout << *storage << std::endl;
 
-    list->sort([] (int a, int b) { return a > b; });
-
-    std::cout << *list << std::endl;
+    // georeader::read(storage->getGeoFileName());
+    
+    // qryreader::execute(storage->getQryFileName());
 
     return 0;
 }
