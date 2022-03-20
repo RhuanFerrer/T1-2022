@@ -1,18 +1,15 @@
 #include <iostream>
-#include "./inputFiles/qryReader.h"
 
-int main(int argc, char *argv[])
-{
+#include "./dataStructures/dlist/dlist.h"
 
-    // Read GEO
+int main(int argc, char* argv[]) {
+    dlist<int>* list = new dlist<int>();
 
-    // Print first SVG
-
-    // Read QRY
-
-    // Execute QRY
-
-    // Print second SVG
+    list->insert(1);
+    list->insert(2);
+    list->insert(3);
+    
+    std::cout << *list << std::endl;
 
     return 0;
 }
