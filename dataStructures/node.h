@@ -6,11 +6,15 @@
 generic
 class node{
     private:
-        T data;
+        T *data;
         node<T> *_next;
         node<T> *_prev;
     public:
-        node(T data){ this->data = data; _next = nullptr; _prev = nullptr; };
+     node(T *data) {
+         this->data = data;
+         _next = nullptr;
+         _prev = nullptr;
+     };
         node<T> *next(){ return _next; };
         node<T> *prev(){ return _prev; };
         void next(node<T> *next){ _next = next; };
@@ -23,3 +27,4 @@ class node{
         T get(){ return data; };
         void set(T data){ this->data = data; };
 };
+

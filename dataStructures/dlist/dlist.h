@@ -45,7 +45,7 @@ class dlist
             return out;
         };
 
-        void insert(T data)
+        void insert(T *data)
         {
             node<T> *newNode = new node<T>(data);
 

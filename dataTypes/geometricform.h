@@ -3,10 +3,10 @@
 #pragma once
 
 enum shapeType {
-    circle,
-    rectangle,
-    triangle,
-    line
+    __circle,
+    __rectangle,
+    __triangle,
+    __line
 };
 
 class geometricform{

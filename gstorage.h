@@ -1,9 +1,9 @@
-/*    Includes    */
 #include <iostream>
-#include "dataSructures/dlist/dlist.h"
 #include "dataTypes/geometricform.h"
 
 #pragma once
+
+#include "./dataStructures/dlist/dlist.h"
 
 class gstorage {
    private:

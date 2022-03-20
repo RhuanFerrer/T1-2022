@@ -2,7 +2,6 @@
 
 #include <iostream>
 
-#include "dataSructures\dlist\dlist.h"
 #include "dataTypes/geometricform.h"
 
 gstorage *gstorage::instance = nullptr;

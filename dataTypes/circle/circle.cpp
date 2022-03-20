@@ -2,7 +2,7 @@
 #include <iostream>
 #include "circle.h"
 
-circle::circle(int id, double x, double y, double radius, std::string colorF, std::string colorS, int shape) : geometricform(id, x, y, colorF, colorS, shape) {
+circle::circle(int id, double x, double y, double radius, std::string colorF, std::string colorS) : geometricform(id, x, y, colorF, colorS, __circle) {
     this->radius = radius;
 }
 
